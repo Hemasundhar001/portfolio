@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hemasundhar Thatikonda | Full Stack .NET & Dynamics 365 CRM Developer</title>
+  
+  <!-- Custom Favicon replacing the empty globe -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%236366f1'/><stop offset='100%' stop-color='%2306b6d4'/></linearGradient></defs><rect width='100' height='100' rx='25' fill='url(%23g)'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='900' font-size='48'>H</text></svg>" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient-canvas"></div>
+
+  <!-- Apple-Style Dynamic Animated Welcome Screen -->
+  <div id="appleWelcomeModal">
+    <div class="apple-box">
+      <div class="apple-hello" id="dynamicGreeting">Hello.</div>
+      <p class="apple-subtext" id="dynamicSubtext">Initializing experience...</p>
+      
+      <!-- Progress Bar & Skip -->
+      <div class="intro-progress-container">
+        <div class="intro-progress-bar" id="introProgressBar"></div>
+      </div>
+      
+      <button class="enter-btn" id="enterPortfolioBtn">
+        <span>Skip Directly</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Top Navigation -->
+  <nav class="glass-nav">
+    <a href="#" class="brand">Hemasundhar.dev</a>
+    <ul class="nav-links">
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#education">Education</a></li>
+  <!-- Download Resume Link -->
+  <li>
+    <a href="Media\Hemasundhar DOT NET Developer.pdf" download="Hemasundhar DOT NET Developer.pdf" class="btn btn-glass nav-resume-btn">
+      <i class="fa-solid fa-file-arrow-down"></i> Resume
+    </a>
+  </li>
+  <li><a href="#contact" class="btn btn-gradient nav-btn">Connect</a></li>
+  <li>
+    <button id="themeToggleBtn" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+      <i class="fa-solid fa-moon" id="themeIcon"></i>
+    </button>
+  </li>
+</ul>
+  </nav>
+
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <div class="hero-content">
+        <div class="glass-badge">
+          <span class="live-dot"></span> Available for Opportunities
+        </div>
+        <h1>
+          Hi, I'm <span class="gradient-title">Hemasundhar Thatikonda</span>
+        </h1>
+        <p class="role-subtitle">Dynamics 365 CRM Developer & Full Stack .NET Specialist</p>
+        <p class="bio">
+          Building mission-critical enterprise systems. Specialized in Microsoft Dynamics 365 CRM custom C# plugins, custom workflow activities, Web API integrations, and scalable desktop/web architectures using ASP.NET Core, UWP, and SQL Server.
+        </p>
+
+        <!-- <div class="hero-actions">
+          <a href="#contact" class="btn btn-gradient"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+          <a href="https://wa.me/917978417349?text=Hi%20Hemasundhar,%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+          <a href="mailto:tatikondahemasundhar@gmail.com" class="btn btn-glass"><i class="fa-regular fa-envelope"></i> Email Me</a>
+        </div> -->
+        <div class="hero-actions">
+  <!-- Primary Download Button -->
+  <a href="Media\Hemasundhar DOT NET Developer.pdf" download="Hemasundhar DOT NET Developer.pdf" class="btn btn-gradient">
+    <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+  </a>
+
+  <!-- View Online in New Tab (Recruiters love previewing before downloading) -->
+  <a href="Media\Hemasundhar DOT NET Developer.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+    <i class="fa-solid fa-arrow-up-right-from-square"></i> View CV
+  </a>
+
+  <!-- WhatsApp Chat -->
+  <a href="https://wa.me/917978417349?text=Hi%20Hemasundhar,%20I%20reviewed%20your%20portfolio%20and%20resume%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:tatikondahemasundhar@gmail.com" class="btn btn-glass">
+    <i class="fa-regular fa-envelope"></i> Email
+  </a>
+</div>
+
+        <div class="social-row">
+          <a href="https://linkedin.com/in/thatikondahemasundhar" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Hemasundhar001" target="_blank" rel="noopener noreferrer" class="social-pill1" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="tel:+917978417349" class="social-pill2" title="Direct Call"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="glow-aura"></div>
+        <div class="glass-photo-frame">
+          <img src="Media\Profile_Picture.jpeg" alt="Thatikonda Hemasundhar" class="avatar-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-spacer">
+      <div class="section-header">
+        <h2>Technical Arsenal</h2>
+        <p>Core development stacks, frameworks, and architecture patterns</p>
+      </div>
+
+      <div class="cards-grid-4">
+        <!-- CRM -->
+        <div class="glass-card skill-card">
+          <h3><i class="fa-solid fa-cubes-stacked color-primary"></i> Dynamics 365 CRM</h3>
+          <div class="pill-cluster">
+            <span class="pill">C# Plugins</span>
+            <span class="pill">Custom Workflows</span>
+            <span class="pill">Dataverse</span>
+            <span class="pill">Power Platform</span>
+            <span class="pill">CRM Web API</span>
+            <span class="pill">Entity Customization</span>
+            <span class="pill">Business Rules</span>
+          </div>
+        </div>
+
+        <!-- .NET & Backend -->
+        <div class="glass-card skill-card">
+          <h3><i class="fa-solid fa-code color-secondary"></i> .NET & Backend</h3>
+          <div class="pill-cluster">
+            <span class="pill">C#</span>
+            <span class="pill">ASP.NET Core Web API</span>
+            <span class="pill">ASP.NET Core MVC</span>
+            <span class="pill">Entity Framework Core</span>
+            <span class="pill">ADO.NET / LINQ</span>
+            <span class="pill">Dependency Injection</span>
+            <span class="pill">JWT Authentication</span>
+            <span class="pill">SOLID Principles</span>
+          </div>
+        </div>
+
+        <!-- Desktop & UI -->
+        <div class="glass-card skill-card">
+          <h3><i class="fa-solid fa-desktop color-accent"></i> Desktop & Frontend</h3>
+          <div class="pill-cluster">
+            <span class="pill">UWP (Universal Windows)</span>
+            <span class="pill">MVVM Pattern</span>
+            <span class="pill">Angular</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">HTML5 & CSS3</span>
+            <span class="pill">Bootstrap</span>
+          </div>
+        </div>
+
+        <!-- DB & Tools -->
+        <div class="glass-card skill-card">
+          <h3><i class="fa-solid fa-database color-success"></i> Database & Tools</h3>
+          <div class="pill-cluster">
+            <span class="pill">SQL Server (SSMS)</span>
+            <span class="pill">Stored Procedures</span>
+            <span class="pill">Git / GitHub</span>
+            <span class="pill">Postman API</span>
+            <span class="pill">Visual Studio 2022</span>
+            <span class="pill">Plugin Registration Tool</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-spacer">
+      <div class="section-header">
+        <h2>Professional Journey</h2>
+        <p>Production engineering, software architecture, and enterprise deployments</p>
+      </div>
+
+      <div class="exp-stack">
+        <!-- CRM Role -->
+        <div class="glass-card">
+          <div class="exp-title-row">
+            <div>
+              <div class="exp-role-text">Dynamics 365 CRM Developer</div>
+              <div class="exp-company-text">TEKSOFT LABS PVT LTD, Bangalore</div>
+            </div>
+            <div class="glass-tag">Aug 03, 2026 – Present</div>
+          </div>
+          <ul class="exp-list">
+            <li>Architecting and configuring enterprise-scale business workflows on Microsoft Dynamics 365 and Dataverse.</li>
+            <li>Writing and debugging synchronous and asynchronous C# custom plugins, custom workflow activities, and actions.</li>
+            <li>Building secure RESTful integrations via CRM Web API endpoints, OAuth protocol, and automated trigger pipelines.</li>
+            <li>Customizing tables, attributes, relationship mapping, security roles, and business rules.</li>
+          </ul>
+        </div>
+
+        <!-- Technolabs Role -->
+        <div class="glass-card">
+          <div class="exp-title-row">
+            <div>
+              <div class="exp-role-text">Junior Software Engineer / .NET Developer</div>
+              <div class="exp-company-text">Technolabs Software Solutions Pvt Ltd, Hyderabad</div>
+            </div>
+            <div class="glass-tag">03/2025 – 05/2026</div>
+          </div>
+          <ul class="exp-list">
+            <li>Engineered and optimized enterprise Point of Sale (POS) applications using C#, .NET, UWP, MVVM, REST APIs, and SQL Server.</li>
+            <li>Architected and implemented the <strong>Petty Cash Management</strong> module from scratch, actively used by client stores.</li>
+            <li>Developed core billing, payment, taxation, inventory, GRN, batch handling, and stock tracking workflows.</li>
+            <li>Integrated RESTful APIs via <code>HttpClient</code> and JSON serialization; increased checkout performance by 25% and reduced billing errors by 30%.</li>
+            <li>Implemented Role-Based Access Control (RBAC), credit-masking privacy features, and resolved 50+ production issues.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-spacer">
+      <div class="section-header">
+        <h2>Academic & Professional Training</h2>
+        <p>Educational qualifications and specialized industry training</p>
+      </div>
+
+      <div class="cards-grid-4">
+        <div class="glass-card">
+          <div class="edu-level">Specialized Coaching</div>
+          <div class="edu-degree">Full Stack .NET Development</div>
+          <div class="edu-inst">Naresh i Technologies, Hyderabad (7 Months)</div>
+          <p class="edu-desc">Intensive hands-on training in C#, ASP.NET Core, MVC, Web API, SQL Server, Entity Framework, and Angular.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="edu-level">Bachelors Degree</div>
+          <div class="edu-degree">B.Tech in Mechanical Engineering</div>
+          <div class="edu-inst">Centurion University of Technology and Management, Paralakhemundi, Odisha (2020 – 2024)</div>
+          <span class="score-badge">CGPA: 8.5 / 10 (80.75%)</span>
+        </div>
+
+        <div class="glass-card">
+          <div class="edu-level">12th Grade (Senior Secondary)</div>
+          <div class="edu-degree">Intermediate (MPC)</div>
+          <div class="edu-inst">Sri Chaitanya Junior College, Visakhapatnam (2018 – 2020)</div>
+          <span class="score-badge">Score: 69%</span>
+        </div>
+
+        <div class="glass-card">
+          <div class="edu-level">10th Grade (Secondary)</div>
+          <div class="edu-degree">High School Certificate</div>
+          <div class="edu-inst">Vikash Vidya Niketan English Medium High School (Passed 2018)</div>
+          <span class="score-badge">Score: 40%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Glassmorphic Interactive Contact -->
+    <section id="contact">
+      <div class="section-header">
+        <h2>Let's Start a Conversation</h2>
+        <p>Drop a line directly to my inbox or reach out instantly via WhatsApp</p>
+      </div>
+
+      <div class="glass-card contact-layout">
+        <div class="contact-card-info">
+          <h3>Get In Touch</h3>
+          <p>Whether you have an open position, freelance project, or just want to say hi, feel free to reach out anytime!</p>
+
+          <div class="contact-row">
+            <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-meta">
+              <span>Mobile Phone</span>
+              <a href="tel:+917978417349">+91 7978417349</a>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon-box"><i class="fa-brands fa-whatsapp color-whatsapp"></i></div>
+            <div class="contact-meta">
+              <span>WhatsApp Direct</span>
+              <a href="https://wa.me/917978417349" target="_blank" rel="noopener noreferrer">+91 7978417349</a>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon-box"><i class="fa-regular fa-envelope"></i></div>
+            <div class="contact-meta">
+              <span>Email Address</span>
+              <a href="mailto:tatikondahemasundhar@gmail.com">tatikondahemasundhar@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-meta">
+              <span>Location</span>
+              <p>Hyderabad, India</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Handling -->
+        <form class="interactive-form" id="contactForm">
+          <div class="notice-box" id="mailFeedback">
+            <i class="fa-solid fa-paper-plane"></i> Launching your email client with your message...
+          </div>
+
+          <div class="input-field">
+            <label for="senderName">Your Name</label>
+            <input type="text" id="senderName" placeholder="e.g. Alex Smith" required />
+          </div>
+
+          <div class="input-field">
+            <label for="senderEmail">Your Email</label>
+            <input type="email" id="senderEmail" placeholder="e.g. alex@company.com" required />
+          </div>
+
+          <div class="input-field">
+            <label for="msgSubject">Subject</label>
+            <input type="text" id="msgSubject" placeholder="e.g. Dynamics 365 / .NET Opportunity" required />
+          </div>
+
+          <div class="input-field">
+            <label for="msgBody">Message</label>
+            <textarea id="msgBody" rows="4" placeholder="Hi Hemasundhar, I came across your portfolio and would like to talk about..." required></textarea>
+          </div>
+
+          <div class="form-btn-group">
+            <button type="submit" class="btn btn-gradient btn-full">
+              <i class="fa-solid fa-envelope"></i> Send to My Email
+            </button>
+            <button type="button" id="whatsappActionBtn" class="btn btn-whatsapp btn-full">
+              <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2026 Thatikonda Hemasundhar. Designed with frosted glass UI & responsive layout.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
