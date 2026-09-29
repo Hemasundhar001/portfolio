@@ -106,6 +106,7 @@ body {
   letter-spacing: -2px;
   line-height: 1.1;
   background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
@@ -115,6 +116,7 @@ body {
 
 [data-theme="light"] .apple-hello {
   background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -191,7 +193,7 @@ body {
   font-weight: 800;
   letter-spacing: -0.5px;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
 }
@@ -293,7 +295,7 @@ body {
 
 .gradient-title {
   background: linear-gradient(135deg, #818cf8 0%, #38bdf8 50%, #f43f5e 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -783,6 +785,142 @@ footer {
   .contact-layout {
     grid-template-columns: 1fr;
     padding: 2rem;
+  }
+}
+/* ============================================================
+   RESPONSIVE DESIGN (Tablets, Mobiles, and Laptops)
+   ============================================================ */
+
+/* Navigation Resume Button */
+.nav-resume-btn {
+  padding: 0.45rem 0.9rem !important;
+  font-size: 0.85rem !important;
+  border-radius: 9999px !important;
+  border: 1px solid var(--glass-border-highlight) !important;
+  white-space: nowrap;
+}
+
+.nav-resume-btn:hover {
+  background: var(--glass-surface-hover);
+  color: var(--secondary) !important;
+}
+
+/* Tablet & Smaller Laptops (Max Width: 1024px) */
+@media (max-width: 1024px) {
+  .glass-nav {
+    padding: 0.9rem 4%;
+    gap: 1rem;
+  }
+
+  .brand {
+    font-size: 1.15rem;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    gap: 0.85rem;
+  }
+
+  .nav-links a {
+    font-size: 0.88rem;
+  }
+
+  .nav-btn {
+    padding: 0.45rem 1rem !important;
+    font-size: 0.88rem;
+  }
+
+  /* Center hero and balance layout */
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 2rem 0 4rem 0;
+    gap: 2.5rem;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.85rem;
+  }
+
+  .hero p.bio {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .social-row {
+    justify-content: center;
+  }
+
+  .hero-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .glass-photo-frame {
+    width: 260px;
+    height: 290px;
+  }
+
+  .glow-aura {
+    width: 270px;
+    height: 270px;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+}
+
+/* Small Tablets and Mobile Devices (Max Width: 768px) */
+@media (max-width: 768px) {
+  .glass-nav {
+    padding: 0.85rem 1.25rem;
+  }
+
+  /* Hide inner navigation links on mobile to prevent clutter; keep brand & theme toggle */
+  .nav-links li:not(:last-child):not(:nth-last-child(2)) {
+    display: none;
+  }
+
+  .container {
+    padding: 2rem 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .apple-hello {
+    font-size: 3rem;
+  }
+
+  .apple-box {
+    padding: 1.5rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cards-grid-4 {
+    grid-template-columns: 1fr;
   }
 }
 /* Navigation Resume Button */
